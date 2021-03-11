@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane onKeyPressed="#handleKeyPressed" prefHeight="439.0" prefWidth="600.0" stylesheets="@../css/messages.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.ui.gui.MessagesController">
+   <children>
+      <HBox layoutX="31.0" layoutY="48.0" prefHeight="318.0" prefWidth="536.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="150.0">
+               <children>
+                  <ListView fx:id="lstGroups" prefHeight="288.0" prefWidth="125.0" />
+                  <Button fx:id="btNewChat" mnemonicParsing="false" onMouseClicked="#handleNewChat" prefHeight="30.0" prefWidth="149.0" text="New Chat" wrapText="true" />
+               </children>
+            </VBox>
+            <VBox prefHeight="318.0" prefWidth="394.0">
+               <children>
+                  <ListView fx:id="lstGroupMessages" prefHeight="287.0" prefWidth="353.0" />
+                  <HBox prefHeight="22.0" prefWidth="376.0">
+                     <children>
+                        <TextField fx:id="txtMessage" prefHeight="25.0" prefWidth="318.0" />
+                        <Button fx:id="btSend" mnemonicParsing="false" onMouseClicked="#sendMessage" prefHeight="25.0" prefWidth="83.0" text="Send" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

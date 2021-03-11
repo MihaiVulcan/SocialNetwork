@@ -1,0 +1,57 @@
+.tab-pane{
+    -fx-background-color: white;
+    -fx-border-color: #0066ff;
+    -fx-border-width: 0.5 0.5 0.5 0.5;
+}
+
+.tab-pane *.tab-header-background {
+    -fx-background-color: white;
+}
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-width: 0.5 0.5 0 0.5;
+    -fx-border-color: #0066ff;
+    -fx-border-radius: 3 3;
+
+}
+
+.tab-label{
+    -fx-background-color: #0066ff;
+    -fx-text-fill: white;
+}
+
+.tab{
+    -fx-background-color: #0066ff;
+    -fx-border-width: 0.5 0.5 0 0.5;
+    -fx-border-color: #0066ff;
+    -fx-border-radius: 3 3;
+}
+
+
+.tab:selected{
+    -fx-background-color: white;
+    -fx-border-width: 0.5 0.5 0 0.5;
+    -fx-border-color: white;
+    -fx-border-radius: 3 3;
+}
+
+.tab:selected .tab-label{
+    -fx-background-color: white;
+    -fx-text-fill: #0066ff;
+}
+
+.tabReports{
+    -fx-background-image:url("reports.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 600 400;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+.tabWelcome{
+    -fx-background-image:url("welcome.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 600 400;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}

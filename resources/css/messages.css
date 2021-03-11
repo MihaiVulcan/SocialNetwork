@@ -1,0 +1,70 @@
+.anchor{
+    -fx-background-color: white;
+}
+
+.button{
+    -fx-border-color: #0066ff;
+    -fx-border-width: 0.5 0.5 0.5 0.5;
+    -fx-background-radius: 3 3;
+    -fx-background-color: transparent;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14;
+    -fx-text-fill: #0066ff;
+    -fx-font-weight: bold;
+    -fx-pref-height: 25;
+}
+
+.button:focused {
+    -fx-border-color: transparent, black;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid;
+    -fx-border-radius: 3, 3;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+.button:pressed {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+.list-view{
+    -fx-border-width: 0.5 0.5 0.5 0.5;
+    -fx-border-color: #0066ff;
+    -fx-border-radius: 3 3 ;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);
+    -fx-text-fill: white;
+}
+
+.list-cell:even { /* <=== changed to even */
+    -fx-background-color: white;
+    -fx-border-color: lightgrey;
+    -fx-border-width: 0.5 0 0.5 0;
+    -fx-border-radius: 2 2;
+}
+.list-cell:odd { /* <=== changed to even */
+    -fx-background-color: white;
+    -fx-border-color: grey;
+    -fx-border-width: 0 0 0 0;
+    -fx-border-radius: 2 2;
+}
+
+.list-cell:empty{
+    -fx-background-color: white;
+    -fx-border-color: grey;
+    -fx-border-width: 0 0 0 0;
+    -fx-border-radius: 2 2;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #0093ff;
+    -fx-text-fill: white;
+}
+
+.text-field{
+    -fx-border-width: 0.5 0.5 0.5 0.5;
+    -fx-border-color: #0066ff;
+    -fx-border-radius: 3 3 ;
+}

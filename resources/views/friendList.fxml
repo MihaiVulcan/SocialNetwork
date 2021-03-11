@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane stylesheets="@../css/everyone.css" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.ui.gui.FriendListController">
+   <children>
+      <VBox layoutX="60.0" layoutY="29.0" prefHeight="342.0" prefWidth="480.0">
+         <children>
+            <ListView fx:id="lstFriends" prefHeight="274.0" prefWidth="480.0" />
+            <Pagination fx:id="pagination" onMouseClicked="#updatePage" prefHeight="33.0" prefWidth="480.0" />
+            <HBox prefHeight="48.0" prefWidth="480.0">
+               <children>
+                  <Label text="Email:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textAddFriend" />
+                  <Button fx:id="btAddFriend" mnemonicParsing="false" onMouseClicked="#handleAddFriend" prefHeight="25.0" prefWidth="106.0" text="Add Friend" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

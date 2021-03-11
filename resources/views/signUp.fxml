@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="anchor" stylesheets="@../css/signup.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.ui.gui.SignUpController">
+   <children>
+      <VBox layoutX="54.0" layoutY="14.0" prefHeight="339.0" prefWidth="479.0">
+         <children>
+            <HBox prefHeight="33.0" prefWidth="450.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="35.0" prefWidth="129.0" styleClass="label" text="*Email:" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtEmail" onAction="#checkEmptyEmail" prefHeight="35.0" prefWidth="322.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <Label fx:id="lblEmail" alignment="CENTER_RIGHT" prefHeight="22.0" prefWidth="222.0" styleClass="labelError" text="This field cannot be empty!" textFill="#f50303">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="33.0" prefWidth="450.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="35.0" prefWidth="129.0" styleClass="label" text="*Name:" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtName" onInputMethodTextChanged="#checkEmptyName" prefHeight="35.0" prefWidth="322.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <Label fx:id="lblName" alignment="CENTER_RIGHT" prefHeight="22.0" prefWidth="222.0" styleClass="labelError" text="This field cannot be empty!" textFill="#f50303">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="33.0" prefWidth="450.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="35.0" prefWidth="129.0" styleClass="label" text="Breed:" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtBreed" prefHeight="35.0" prefWidth="322.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <Label alignment="CENTER_RIGHT" prefHeight="22.0" prefWidth="222.0" styleClass="label" text="Invalid Breed!" textFill="#f50303" visible="false">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="33.0" prefWidth="450.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="35.0" prefWidth="129.0" styleClass="label" text="Favourite food:" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtFood" prefHeight="35.0" prefWidth="322.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <Label alignment="CENTER_RIGHT" prefHeight="22.0" prefWidth="215.0" text="Invalid Food!" textFill="#f50303" visible="false">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="33.0" prefWidth="450.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="35.0" prefWidth="129.0" styleClass="label" text="*Password:" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="txtPassword" prefHeight="34.0" prefWidth="323.0" />
+               </children>
+            </HBox>
+            <Label fx:id="lblPassword" alignment="CENTER_RIGHT" prefHeight="22.0" prefWidth="223.0" styleClass="labelError" text="This field cannot be empty!" textFill="#f50303">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="33.0" prefWidth="450.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="34.0" prefWidth="143.0" styleClass="label" text="*Confirm Password:" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="txtPassword1" onAction="#checkEmptyPassword1" prefHeight="34.0" prefWidth="311.0" />
+               </children>
+            </HBox>
+            <Label fx:id="lblPassword1" alignment="CENTER_RIGHT" prefHeight="22.0" prefWidth="223.0" styleClass="labelError" text="This field cannot be empty!" textFill="#f50303" visible="false">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button layoutX="67.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#handleBack" prefHeight="35.0" prefWidth="100.0" text="Back">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button layoutX="433.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#handleSignUp" prefHeight="35.0" prefWidth="100.0" text="Sign Up!">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
